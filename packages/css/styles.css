@@ -772,8 +772,11 @@ img {
 }
 
 .portfolio__description {
+  font-family: Arial, sans-serif;
   margin-bottom: var(--mb-0-75);
+  letter-spacing: 1px;
 }
+
 
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);

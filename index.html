@@ -113,7 +113,7 @@
 
                             </p>
                             <a href="#" id="playVideo" class="button button--flex home__button">
-                                Self Introduction<i class="uil uil-message button__icon"></i>
+                                Self Introduction Video<i class="uil uil-message button__icon"></i>
                             </a>
                             
                             <!-- Hidden video element -->
@@ -121,7 +121,7 @@
                                 <div class="video-modal-content">
                                     <span class="close">&times;</span>
                                     <video id="introVideo" width="100%" controls>
-                                        <source src="packages\images\Mathew.mp4" type="video/mp4">
+                                        <source src="packages\images\Newone.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
@@ -153,7 +153,7 @@
                     <div class="about__data">
                         <p class="about__description">
    From an Electrical Engineer with a strong technical foundation, my journey into Flutter development began with a profound curiosity about mobile applications. I took the initiative to self-learn and explore Flutter through various resources,
-    driven by a passion for creating impactful digital solutions. By building several applications independently, I have transformed my enthusiasm into tangible skills.
+    driven by a passion for creating impactful digital solutions. By building mobile applications independently, I have transformed my enthusiasm into tangible skills.
      My goal is to continue evolving as a Flutter developer, using my technical background and creativity to address challenges and craft innovative, user-centric applications that make a meaningful difference in the tech industry.
                         </p>
                         <div class="about__info">
@@ -178,7 +178,7 @@
                             <!-- <a download="" href="packages\images\Resume_Flutter.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a> -->
-                            <a download="" href=" packages\images\Flutter_Resume.pdf" class="button button--flex">
+                            <a download="" href="packages\images\Resume_Flutter.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -198,8 +198,8 @@
                             <div class="skills__header">
                                 <i class="uil uil-analytics skills__icon"></i>
                                <div>
-                                   <h1 class="skills__title">Data Analyst</h1>
-                                   <span class="skills__subtitle">More than 2 years</span>
+                                   <h1 class="skills__title">Flutter Developer</h1>
+                                   <span class="skills__subtitle">More than 6 Months</span>
                                </div>
 
                                <i class="uil uil-angle-down skills__arrow"></i>
@@ -573,7 +573,8 @@
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">Weather App</h3>
-                    <p class="portfolio__description">Developed ‘ClimaMate’, a weather app that provides users with current weather details and a five-day forecast based on their entered location. Utilized APIs to ensure accurate and up-to-date weather information. Enhanced user experience with an intuitive search functionality.</p>
+                    <p class="portfolio__description">
+                        Developed ‘ClimaMate,’ a Flutter mobile app that enables users to search for current weather conditions and five-day forecasts for any city. The app retrieves climate data through APIs provided by OpenWeather Ltd. Enhanced user experience with an intuitive search functionality.</p>
                     <a href="" class="button button--flex button--small portfolio__button" id="demoButton2">
                         Demo
                         <i class="uil uil-arrow-right button__icon"></i>
@@ -722,8 +723,8 @@
 
                 <!--Add pagination
 
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        ==================== CONTACT ME ====================-->
+        <!-- <section class="contact section" id="contact">
             <h2 class="section__title">Contact me</h2>
             <span class="section__subtitle">Get in touch</span>
 
@@ -781,7 +782,7 @@
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <a href="#" id="sendMessageButton" class="button button--flex">
                             Send message
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -790,10 +791,78 @@
             </div>
 
         </section>
-    </main>
+    </main> -->
+
+     <section class="contact section" id="contact">
+        <h2 class="section__title">Contact me</h2>
+        <span class="section__subtitle">Get in touch</span>
+    
+        <div class="contact__container container grid">
+            <div>
+                <div class="contact__information">
+                    <i class="uil uil-phone-alt contact__icon"></i>
+    
+                    <div>
+                        <h3 class="contact__title">Call me</h3>
+                        <span class="contact__subtitle">(+91) 8281895155</span>
+                    </div>
+                </div>
+    
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+    
+                    <div>
+                        <h3 class="contact__title">E-mail</h3>
+                        <span class="contact__subtitle">matsibi@gmail.com</span>
+                    </div>
+                </div>
+    
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+    
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Trivandrum, Kerala</span>
+                    </div>
+                </div>
+            </div>
+    
+            <form action="mailto:matsibi@gmail.com" method="post" enctype="text/plain" class="contact__form grid">
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label for="name" class="contact__label">Name</label>
+                        <input type="text" id="name" name="name" class="contact__input" required>
+                    </div>
+    
+                    <div class="contact__content">
+                        <label for="email" class="contact__label">E-mail</label>
+                        <input type="email" id="email" name="email" class="contact__input" required>
+                    </div>
+                </div>
+    
+                <div class="contact__content">
+                    <label for="subject" class="contact__label">Subject</label>
+                    <input type="text" id="subject" name="subject" class="contact__input" required>
+                </div>
+    
+                <div class="contact__content">
+                    <label for="description" class="contact__label">Description</label>
+                    <textarea id="description" name="description" cols="0" rows="7" class="contact__input" required></textarea>
+                </div>
+    
+                <div>
+                    <button type="submit" class="button button--flex ">
+                        Send message
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+     
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
+    <!-- <footer class="footer">
 
         <div class="footer__bg">
             <div class="footer__container container grid">
@@ -828,7 +897,7 @@
             </div>
             <p class="footer__copy">&#169; All rights reserved.</p>
         </div>
-    </footer>
+    </footer> -->
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">

@@ -27,7 +27,37 @@ function linkAction() {
   // When we click on each nav__link, we remove the show-menu class
   navMenu.classList.remove("show-menu");
 }
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+// navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+// Mail To function 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the button using its ID
+  const sendMessageButton = document.getElementById('sendMessageButton');
+
+  // Add click event listener to the button
+  sendMessageButton.addEventListener('click', function(event) {
+      // Prevent the default action of the link
+      event.preventDefault();
+      
+      // Define email details
+      const recipient = 'example@example.com.';  // Replace with recipient email address
+      const subject = 'Subject Here';  // Replace with subject
+      const body = 'Hello, I would like to discuss...';  // Replace with email body
+
+      // Construct the mailto URL
+      const mailtoURL = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      // Open the mail client
+      window.location.href = mailtoURL;
+  });
+});
+
+// Demo Try 
+
+
+
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName("skills__content"),
