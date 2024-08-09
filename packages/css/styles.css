@@ -419,7 +419,10 @@ img {
 
 .about__description {
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  font-family: Arial, sans-serif;
+  margin-bottom: var(--mb-0-75);
+  letter-spacing: 1px;
+margin-bottom: var(--mb-2-5);
 }
 
 .about__info {
